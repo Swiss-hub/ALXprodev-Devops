@@ -19,5 +19,8 @@ done
 # List background jobs
 jobs
 
+# Example: kill all background jobs (not necessary for normal operation, but included as requested)
+jobs -p | xargs -r kill
+
 wait
 echo "All fetch operations completed."
