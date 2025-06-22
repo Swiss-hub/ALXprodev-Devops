@@ -1,0 +1,8 @@
+#!/bin/bash
+
+jq -r '
+  . as $root |
+  "\(.name) is of type \(.types[0].type.name), weighs \(.weight/10)kg, and is \(.height/10)m tall."
+' data.json | \
+sed 's/\b\(.\)/\u\1/' | \
+sed 's/type \([a-z]\)/type \u\1/'
