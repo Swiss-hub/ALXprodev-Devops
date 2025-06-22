@@ -16,5 +16,8 @@ for name in "${POKEMON_LIST[@]}"; do
     ) &
 done
 
+# List background jobs
+jobs
+
 wait
 echo "All fetch operations completed."
