@@ -13,4 +13,5 @@ for name in "${POKEMON_LIST[@]}"; do
     else
         echo "Failed to fetch data for $name ❌"
     fi
+    sleep 2
 done
